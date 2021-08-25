@@ -22,9 +22,9 @@ def main():
         if check.jitter > jitter and check.avg_rtt > latency:
             print(f"JITTER AND LATENCY CRITICAL latency = {check.avg_rtt},jitter = {check.jitter} | ", end='')
         elif check.jitter > jitter:
-            print(f"JITTER CRITICAL latency = {check.avg_rtt},jitter={check.jitter} | ", end='')
+            print(f"JITTER CRITICAL jitter = {check.avg_rtt},latency={check.jitter} | ", end='')
         else:
-            print(f"JITTER AND LATENCY CRITICAL latency = {check.avg_rtt},jitter = {check.jitter} | ", end='')
+            print(f"LATENCY CRITICAL latency = {check.avg_rtt},jitter = {check.jitter} | ", end='')
         print(f"maxlatency = {latency},maxjitter = {jitter}")
     else:
         print(f"HOST OK - latency = {check.avg_rtt},jitter = {check.jitter}")
