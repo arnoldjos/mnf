@@ -8,7 +8,7 @@ python test1.py 127.0.0.1 -j 0.5 -l .3
 Gets the total number of Covid-19 cases globally
 ```
 #For total global
-python test1.py
+python test2.py
 #For specific country using country code
-python test1.py -c ph
+python test2.py -c ph
 ```
