@@ -1,14 +1,25 @@
 #test1.py
 Check for maximum jitter and latency
+
+
+##Command Format
 ```
-python test1.py 127.0.0.1 -j 0.5 -l .3
+usage: check-path.py [-l latency] [-j jitter]
+
+optional arguments:
+  -l latency
+        Max latency defaults to 50 if not specified
+  -j jitter
+        Max jitter defaults to 50 if not specified
 ```
 
 #test2.py
 Gets the total number of Covid-19 cases globally
+##Command Format
 ```
-#For total global
-python test2.py
-#For specific country using country code
-python test2.py -c ph
+usage: test2.py [-c country]
+
+optional arguments:
+  -c country
+        Country code (defaults to all if not specified)
 ```
